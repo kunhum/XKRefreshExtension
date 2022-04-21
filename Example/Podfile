@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '9.0'
+
+target 'XKRefreshExtension_Example' do
+  pod 'XKRefreshExtension', :path => '../'
+
+  target 'XKRefreshExtension_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
