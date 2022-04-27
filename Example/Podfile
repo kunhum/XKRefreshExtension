@@ -1,13 +1,12 @@
-use_frameworks!
-
-platform :ios, '9.0'
+use_modular_headers!
+platform :ios, '10.0'
 
 target 'XKRefreshExtension_Example' do
   pod 'XKRefreshExtension', :path => '../'
 
   target 'XKRefreshExtension_Tests' do
     inherit! :search_paths
-
-    
   end
+  
+  
 end

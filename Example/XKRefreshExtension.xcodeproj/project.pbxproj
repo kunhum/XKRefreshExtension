@@ -7,14 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2F4EC141911C876E929AA9CA /* Pods_XKRefreshExtension_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21D6A2D7D645887F6A5C58A8 /* Pods_XKRefreshExtension_Tests.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
-		B2BC91440EA50F2868A1DA39 /* Pods_XKRefreshExtension_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D91B9C48DAE866A267045124 /* Pods_XKRefreshExtension_Example.framework */; };
+		EEDA667A4DE257D480F078CD /* libPods-XKRefreshExtension_Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E7BA5AE6667FC64BBA6B5BF /* libPods-XKRefreshExtension_Tests.a */; };
+		F9144EB74B07FAECDA8C39AF /* libPods-XKRefreshExtension_Example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B3A2B28D3F60F25489929860 /* libPods-XKRefreshExtension_Example.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,10 +28,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		16DA13E1AF47FD407DA315F7 /* XKRefreshExtension.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = XKRefreshExtension.podspec; path = ../XKRefreshExtension.podspec; sourceTree = "<group>"; };
+		16DA13E1AF47FD407DA315F7 /* XKRefreshExtension.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = XKRefreshExtension.podspec; path = ../XKRefreshExtension.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		1D5A77D24430543DCC780206 /* Pods-XKRefreshExtension_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XKRefreshExtension_Tests.release.xcconfig"; path = "Target Support Files/Pods-XKRefreshExtension_Tests/Pods-XKRefreshExtension_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		21D6A2D7D645887F6A5C58A8 /* Pods_XKRefreshExtension_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XKRefreshExtension_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		22FA8E45639E0E9D761460CF /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		1E7BA5AE6667FC64BBA6B5BF /* libPods-XKRefreshExtension_Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-XKRefreshExtension_Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		22FA8E45639E0E9D761460CF /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* XKRefreshExtension_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XKRefreshExtension_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -43,10 +43,10 @@
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		9DC2567403F779628C62337E /* Pods-XKRefreshExtension_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XKRefreshExtension_Example.debug.xcconfig"; path = "Target Support Files/Pods-XKRefreshExtension_Example/Pods-XKRefreshExtension_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		B3A2B28D3F60F25489929860 /* libPods-XKRefreshExtension_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-XKRefreshExtension_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7E2B074CC252B1657602921 /* Pods-XKRefreshExtension_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XKRefreshExtension_Tests.debug.xcconfig"; path = "Target Support Files/Pods-XKRefreshExtension_Tests/Pods-XKRefreshExtension_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		BC841C3674FF216C61823DAD /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		BC841C3674FF216C61823DAD /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		D8742B5B4AFDF59FE7861C40 /* Pods-XKRefreshExtension_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XKRefreshExtension_Example.release.xcconfig"; path = "Target Support Files/Pods-XKRefreshExtension_Example/Pods-XKRefreshExtension_Example.release.xcconfig"; sourceTree = "<group>"; };
-		D91B9C48DAE866A267045124 /* Pods_XKRefreshExtension_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XKRefreshExtension_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,7 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B2BC91440EA50F2868A1DA39 /* Pods_XKRefreshExtension_Example.framework in Frameworks */,
+				F9144EB74B07FAECDA8C39AF /* libPods-XKRefreshExtension_Example.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,7 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2F4EC141911C876E929AA9CA /* Pods_XKRefreshExtension_Tests.framework in Frameworks */,
+				EEDA667A4DE257D480F078CD /* libPods-XKRefreshExtension_Tests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,15 +147,14 @@
 				B7E2B074CC252B1657602921 /* Pods-XKRefreshExtension_Tests.debug.xcconfig */,
 				1D5A77D24430543DCC780206 /* Pods-XKRefreshExtension_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
 		8A1D85DD1FEC6C63C577520E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D91B9C48DAE866A267045124 /* Pods_XKRefreshExtension_Example.framework */,
-				21D6A2D7D645887F6A5C58A8 /* Pods_XKRefreshExtension_Tests.framework */,
+				B3A2B28D3F60F25489929860 /* libPods-XKRefreshExtension_Example.a */,
+				1E7BA5AE6667FC64BBA6B5BF /* libPods-XKRefreshExtension_Tests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -171,7 +170,7 @@
 				607FACCC1AFB9204008FA782 /* Sources */,
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
-				F752B061A1D7AE0894E377C5 /* [CP] Embed Pods Frameworks */,
+				575AABFF86E5B037E972ABC2 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -227,6 +226,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -262,6 +262,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		575AABFF86E5B037E972ABC2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-XKRefreshExtension_Example/Pods-XKRefreshExtension_Example-resources.sh",
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-XKRefreshExtension_Example/Pods-XKRefreshExtension_Example-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		A2E88F976B0D663E700D8CA2 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -304,24 +322,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F752B061A1D7AE0894E377C5 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-XKRefreshExtension_Example/Pods-XKRefreshExtension_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/XKRefreshExtension/XKRefreshExtension.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/XKRefreshExtension.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-XKRefreshExtension_Example/Pods-XKRefreshExtension_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -419,7 +419,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -465,7 +465,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -479,12 +479,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = XKRefreshExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -494,12 +495,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = XKRefreshExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
