@@ -10,13 +10,19 @@ import MJRefresh
 import RxCocoa
 import RxSwift
 
-public enum XKRefreshStatus {
+public enum XKRefreshError: Equatable {
+    case network
+    case other
+}
+
+public enum XKRefreshStatus: Equatable {
+    
     case firstIn
     case headerRefresh
     case footerRefresh
     case noData
     case noMoreData
-    case error(Any)
+    case error(XKRefreshError)
     case none
 }
 
@@ -27,7 +33,7 @@ public protocol XKRefreshable {
 
 public extension XKRefreshable {
     
-    func refresh(header: MJRefreshHeader?, footer: MJRefreshFooter?, errorAction: ((_ error: Any) -> Void)? = nil) {
+    func refresh(header: MJRefreshHeader?, footer: MJRefreshFooter?, errorAction: ((_ error: XKRefreshError) -> Void)? = nil) {
         
 //        weak var weakView: UIView? = view
         weak var weakHeader: MJRefreshHeader? = header
