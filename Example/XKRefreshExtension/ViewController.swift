@@ -89,5 +89,9 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             break
         }
     }
+    
+    deinit {
+        debugPrint("")
+    }
 }
 
