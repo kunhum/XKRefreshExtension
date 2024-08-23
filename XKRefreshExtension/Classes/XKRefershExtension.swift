@@ -7,6 +7,67 @@
 
 import Foundation
 import MJRefresh
+import RxCocoa
+import RxSwift
+
+public enum XKRefreshStatus {
+    case firstIn
+    case headerRefresh
+    case footerRefresh
+    case noData
+    case noMoreData
+    case error(Any)
+    case none
+}
+
+public protocol XKRefreshable {
+    var refreshStatus: BehaviorRelay<XKRefreshStatus> { get set }
+    var autoRefreshBag: DisposeBag { get set }
+}
+
+public extension XKRefreshable {
+    
+    func refresh(header: MJRefreshHeader?, footer: MJRefreshFooter?, errorAction: ((_ error: Any) -> Void)? = nil) {
+        
+//        weak var weakView: UIView? = view
+        weak var weakHeader: MJRefreshHeader? = header
+        weak var weakFooter: MJRefreshFooter? = footer
+        
+        refreshStatus
+            .skip(1)
+            .bind { status in
+                
+                switch status {
+                case .firstIn:
+                    break
+                case .headerRefresh:
+                    weakFooter?.endRefreshing()
+                    weakFooter?.isHidden = false
+                    weakHeader?.beginRefreshing()
+                case .footerRefresh:
+                    weakHeader?.endRefreshing()
+                    weakFooter?.beginRefreshing()
+                case .noData:
+                    weakHeader?.endRefreshing()
+                    weakFooter?.endRefreshing()
+                    weakFooter?.isHidden = true
+                case .noMoreData:
+                    weakHeader?.endRefreshing()
+                    weakFooter?.endRefreshingWithNoMoreData()
+                case let .error(err):
+                    weakHeader?.endRefreshing()
+                    weakFooter?.endRefreshing()
+                    errorAction?(err)
+                case .none:
+                    weakHeader?.endRefreshing()
+                    weakFooter?.endRefreshing()
+                }
+                
+            }
+            .disposed(by: autoRefreshBag)
+    }
+    
+}
 
 public extension UIScrollView {
     

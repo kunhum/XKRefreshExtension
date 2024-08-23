@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'XKRefreshExtension'
-  s.version          = '1.0.0'
-  s.summary          = 'MJRefresh 扩展'
+  s.version          = '1.0.1'
+  s.summary          = 'refresh'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -39,4 +39,8 @@ TODO: Add long description of the pod here.
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
    s.dependency 'MJRefresh'
+   s.dependency 'RxSwift'
+   s.dependency 'RxCocoa'
+   s.dependency 'RxRelay'
+   s.dependency 'SnapKit'
 end

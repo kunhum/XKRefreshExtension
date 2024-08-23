@@ -1,0 +1,43 @@
+PODS:
+  - MJRefresh (3.7.6)
+  - RxCocoa (6.7.1):
+    - RxRelay (= 6.7.1)
+    - RxSwift (= 6.7.1)
+  - RxRelay (6.7.1):
+    - RxSwift (= 6.7.1)
+  - RxSwift (6.7.1)
+  - SnapKit (5.6.0)
+  - XKRefreshExtension (1.0.0):
+    - MJRefresh
+    - RxCocoa
+    - RxRelay
+    - RxSwift
+    - SnapKit
+
+DEPENDENCIES:
+  - XKRefreshExtension (from `../`)
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - RxCocoa
+    - RxRelay
+    - RxSwift
+    - SnapKit
+  trunk:
+    - MJRefresh
+
+EXTERNAL SOURCES:
+  XKRefreshExtension:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  MJRefresh: 2fe7fb43a5167ceda20bb7e63f130c04fd1814a5
+  RxCocoa: f5609cb4637587a7faa99c5d5787e3ad582b75a4
+  RxRelay: 4151ba01152436b08271e08410135e099880eae5
+  RxSwift: b9a93a26031785159e11abd40d1a55bcb8057e52
+  SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
+  XKRefreshExtension: 87d400c750675f5744b7493742bf157d98091db5
+
+PODFILE CHECKSUM: 4a288f8252948f9cd0087f1f9458699b4ac3e7e5
+
+COCOAPODS: 1.15.2
