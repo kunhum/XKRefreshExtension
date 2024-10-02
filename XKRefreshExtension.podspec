@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'XKRefreshExtension'
-  s.version          = '1.0.3'
+  s.version          = '1.0.4'
   s.summary          = 'refresh'
 
 # This description is used to generate tags and improve search results.

@@ -29,6 +29,8 @@ public enum XKRefreshStatus: Equatable {
 public protocol XKRefreshable {
     var refreshStatus: BehaviorRelay<XKRefreshStatus> { get set }
     var autoRefreshBag: DisposeBag { get set }
+    func outputRefresher() -> Observable<XKRefreshStatus>
+    func inputRefresher() -> Observable<XKRefreshStatus>
 }
 
 public extension XKRefreshable {
@@ -67,10 +69,18 @@ public extension XKRefreshable {
                 case .none:
                     weakHeader?.endRefreshing()
                     weakFooter?.endRefreshing()
+                    weakFooter?.isHidden = false
                 }
                 
             }
             .disposed(by: autoRefreshBag)
+    }
+    
+    func outputRefresher() -> Observable<XKRefreshStatus> {
+        return refreshStatus.skip(1).filter { $0 == .none || $0 == .noData || $0 == .noMoreData }
+    }
+    func inputRefresher() -> Observable<XKRefreshStatus> {
+        return refreshStatus.filter { $0 == .firstIn || $0 == .headerRefresh || $0 == .footerRefresh }
     }
     
 }
